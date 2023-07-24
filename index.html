@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Aldofani - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <header>
+    <!-- Add your header content here (e.g., your name, logo, navigation) -->
+    <h1>Ahmed Aldofani</h1>
+    <nav class="navMenu">
+      <ul>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+
+   <div class = "switch container">
+    <label for="theme-toggle" class="mode"> </label>
+    <label class="switch"> 
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+      <section id="about-me" class="section">
+        <h2>About Me</h2>
+        <p>
+          Hi there! I'm Ahmed Aldofani, a passionate and aspiring web developer on an exciting journey to master the world of coding. 
+         <br> Ever since I wrote my first "Hello, World!" program, I've been captivated by the endless possibilities of technology <br>
+         and its power to create meaningful and innovative solutions.
+        </p>
+        <p>
+          Currently, I'm honing my coding skills on Codecademy, immersing myself in the fascinating world of full-stack development. 
+          <br>With each line of code I write, I feel a sense of accomplishment and a drive to push my limits further.
+          <br>My goal is not just to write code that works, but to craft elegant and efficient solutions that make a positive impact on users' lives.
+        </p>
+        <p>I have been coding for: <span id="coding-counter"></span></p> 
+        <p>
+          Let's connect and embark on this coding journey together. Feel free to reach out to me through <a href="contact.html">Contact</a> .
+        </p>
+       
+      </section>
+      
+      <section id="skills">
+        <h2>Skills</h2>
+        <!-- Add your skills here (e.g., programming languages, frameworks, tools) -->
+        <div id="skills-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-git"></i>
+          <i class="fab fa-chrome"></i>
+          <i class="fas fa-terminal"></i>
+          <i class="fas fa-universal-access"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-markdown"></i>
+       
+        </div>
+      </section>
+
+      <h2>Projects</h2>
+    <div id="projects">
+      <!-- Add information about your projects here -->
+      <div class="project">
+        <a href="https://ahmedaldofani.github.io/Form-a-Story-with-HTML-Forms/" target="_blank"><h3>Form-A-Story</h3></a>
+        <p>
+          A story builder using Forms to twist <br>the story dependig on selections</p>
+      </div>
+
+      <div class="project">
+        <a href="https://ahmedaldofani.github.io/Mixed-Messages-Generator-/" target="_blank"><h3> Mixed Messages Generator</h3></a>
+        <p>A program that generates 3 random messages once run.<br> Try it ;</p><br>
+      </div>
+
+      <div class="project">
+        <a href="https://ahmedaldofani.github.io/The-Tea-Cozy/" target="_blank"><h3> The Tea Cozy</h3></a>
+        <p>A responsive website using flexbox</p><br>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
