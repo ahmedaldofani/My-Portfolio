@@ -2,14 +2,25 @@
 
 /* Light mode style */
 body.light-mode {
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #dbded7;
+  color: rgb(0, 0, 0);
+}
+.light-mode a {
+  color: black;
+}
+.light-mode #coding-counter {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
 /* Dark mode style */
 body.dark-mode {
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   color: #f9f9f9;
+}
+.dark-mode #coding-counter{
+  color: rgb(36, 214, 227);;
+  font-weight: 700;
 }
 
 /* Style the switch container */
@@ -29,7 +40,8 @@ body.dark-mode {
 .switch {
   position: fixed;
   display: inline-block;
-  top: 3%;
+  top: 4%;
+  left: 1%;
   width: 60px;
   height: 34px;
   margin: 0.3rem;
@@ -57,7 +69,7 @@ body.dark-mode {
 
 /* Style the round part when the switch is in the "on" position */
 .slider.round {
-  background-color: rgb(39, 209, 198);;
+  background-color: rgb(36, 214, 227);
 }
 
 /* Style the slider's appearance when in the "off" position */
@@ -84,10 +96,10 @@ body {
     padding: 0;
     color: #fafafa;
     background-color: black;
-    font-size: 1.5rem;
+    
 
   }
-  .background-overlay {
+.background-overlay {
     position: fixed; /* Position the overlay div */
     top: 0;
     left: 0;
@@ -101,45 +113,40 @@ body {
     z-index: -1; /* Place the overlay div behind the content */
    
   }
-  h2 {
+h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  a {
-    color: rgb(255, 255, 255); /* Set the default link color */
-    text-decoration: none; /* Remove underline by default */
-  }
+  
 
-  /* Link in its visited state */
-  a:visited {
-    color: rgb(39, 209, 198); /* Set the link color after it has been visited */
-  }
-
+  
   /* Link on hover */
   a:hover {
-    color:rgb(189, 189, 36);/* Set the link color when the mouse hovers over it */
+    color:rgb(36, 214, 227);/* Set the link color when the mouse hovers over it */
     cursor: pointer; 
   }
 
   /* Link on active (while being clicked) */
-  a:active {
-    color: green; /* Set the link color while being clicked */
+  a {
+    color: white;
+    text-decoration: none;
   }
   
   
   
   header {
-    color: #fff;
+    color: rgb(67, 34, 34);
     padding: 10px;
     
   }
   
   header h1 {
-    font-size: 50px;
+    font-size: 3rem;
     margin: 0.5rem;
     height: 0.25rem;
     display: flex;
     justify-content: center;
+    color: rgb(255, 255, 255);
   }
   
   nav ul {
@@ -151,24 +158,22 @@ body {
   }
   
   nav ul li {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 1;
     display: inline-block;
     margin-right: 70px;
   }
   
-  nav ul li:last-child {
-    margin-right: 0;
-  }
+
   
   nav ul li a {
-    color: #fff;
+    color: rgb(36, 214, 227);
     text-decoration: none;
   }
   
   nav ul li a:hover {
     
-    color: rgb(189, 189, 36);
+    color: rgb(249, 249, 5);
   }
   
   main {
@@ -184,13 +189,10 @@ body {
 #about-me {
     text-align: center;
     font-size: 1.2em;
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
-#coding-counter{
-  color: rgb(39, 209, 198);
-  font-weight: 700;
-}
+
 /*Skills Section*/
 #skills {
   text-align: center;} 
@@ -211,15 +213,14 @@ i {
   /* Projects Section */
   h2 {
     text-align: center;
-    padding-top: 1.3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
   #projects {
     display: flex;
-    width: auto;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
+    
   }
   .project {
    display: flex;
@@ -233,7 +234,8 @@ i {
   }
   
   .project h3 {
-    margin: 0;
+    margin-bottom: -0.5rem; 
+
   }
   
   /* Contact Section */
@@ -258,9 +260,42 @@ i {
  /*Contact page*/
  .contact-text{
   text-align: center;
+  font-size: 1.2em;
+  margin-right: 1rem;
+  margin-left: 1rem;
  }
 
  .statement{
-  padding: 5rem;
+  padding: 1rem;
   font-size: 1.2rem;
  }
+
+ @media (max-width: 714px) {
+   /* Style the switch container */
+.switch {
+position: absolute;
+ top: 2%;
+ left: 45%;
+}
+
+body {
+  padding-top: 4rem;;
+}
+}
+@media (max-width: 694px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    
+    margin-bottom: 1rem;
+    
+  }
+}
+@media (max-width: 403px) {
+  header h1{
+    font-size: 2.2rem;
+  }
+}
